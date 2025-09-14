@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Student Management System</title>
+</head>
+
+<body>
+
+  <div class="main">
+    <div class="nav">
+      <h2>Student Scores Manager</h2>
+    </div>
+
+    <div class="buttons-div">
+      <button class="filter-btn" data-filter="all" onclick="showStudents()">Show Students</button>
+      <button class="filter-btn" onclick="showPassedStudents()">Show Passed Students</button>
+      <button class="filter-btn" onclick="showFailedStudents()">Show Failed Students</button>
+      <button class="filter-btn" onclick="showAverage()">Show Average Score</button>
+      <button class="filter-btn" onclick="addBonus()">Add +5 Bonus (Preview)</button>
+      <button class="filter-btn" onclick="logAllStudents()">Log Students (Console)</button>
+    </div>
+
+    <table border="2" cellpadding="8" id="studentTable">
+      <thead>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Score</th>
+        <th>Grade</th>
+      </thead>
+      <tbody id="output">
+
+      </tbody>
+    </table>
+
+  </div>
+
+  <script src="./script/app.js"></script>
+</body>
+
+</html>
